@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Merry Christmas Ayuuu 🎄🎀</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+
+margin:0;
+
+background:radial-gradient(circle at top,#2a0f23,#0b0b12);
+
+color:#ffeaf3;
+
+font-family:'Segoe UI',sans-serif;
+
+overflow:hidden;
+
+}
+
+.slider{
+
+display:flex;
+
+width:500%;
+
+height:100vh;
+
+transition:transform 1s cubic-bezier(.77,0,.18,1);
+
+}
+
+.slide{
+
+width:100%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.card{
+
+background:rgba(255,192,203,0.1);
+
+backdrop-filter:blur(18px);
+
+border-radius:28px;
+
+padding:38px 30px;
+
+max-width:430px;
+
+text-align:center;
+
+box-shadow:
+
+0 0 25px rgba(255,182,193,0.25),
+
+0 0 60px rgba(255,105,180,0.15);
+
+animation:fadeUp 1.8s ease;
+
+}
+
+h1{
+
+color:#ff9acb;
+
+font-size:2.4em;
+
+margin-bottom:6px;
+
+}
+
+h2{
+
+color:#ffd3e8;
+
+font-weight:normal;
+
+margin-bottom:20px;
+
+}
+
+p{
+
+line-height:2;
+
+font-size:1.07em;
+
+margin-bottom:18px;
+
+color:#ffeaf3;
+
+}
+
+.button{
+
+margin-top:18px;
+
+padding:14px 34px;
+
+background:linear-gradient(135deg,#ff7bbf,#ffb6d9);
+
+color:#2a0f23;
+
+border-radius:40px;
+
+font-weight:600;
+
+border:none;
+
+cursor:pointer;
+
+transition:all .35s ease;
+
+}
+
+.button:hover{
+
+transform:scale(1.07);
+
+box-shadow:0 0 25px rgba(255,182,193,0.6);
+
+}
+
+.whatsapp{
+
+display:inline-block;
+
+margin-top:16px;
+
+padding:14px 34px;
+
+background:linear-gradient(135deg,#25D366,#7cf0b2);
+
+color:#003b1f;
+
+border-radius:40px;
+
+font-weight:600;
+
+text-decoration:none;
+
+}
+
+.heart{
+
+font-size:2.4em;
+
+animation:pulse 1.6s infinite;
+
+}
+
+#surprise{
+
+display:none;
+
+margin-top:18px;
+
+font-size:1.05em;
+
+color:#ffd6ea;
+
+}
+
+/* Floating elements */
+
+.snow,.floating-heart,.kiss{
+
+position:fixed;
+
+pointer-events:none;
+
+z-index:1;
+
+}
+
+.snow{top:-10px;animation:fall linear infinite;}
+
+.floating-heart{bottom:-10px;animation:floatUp 7s linear infinite;}
+
+.kiss{font-size:22px;animation:kissFloat 2.4s ease-out forwards;}
+
+@keyframes fall{to{transform:translateY(110vh);}}
+
+@keyframes floatUp{to{transform:translateY(-120vh);opacity:0;}}
+
+@keyframes kissFloat{to{transform:translateY(-160px) scale(1.8);opacity:0;}}
+
+@keyframes pulse{50%{transform:scale(1.25);}}
+
+@keyframes fadeUp{
+
+from{opacity:0;transform:translateY(30px);}
+
+to{opacity:1;transform:translateY(0);}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- soft cute music -->
+
+<audio autoplay loop>
+
+<source src="https://cdn.pixabay.com/audio/2023/03/30/audio_8f7cc6fdad.mp3">
+
+</audio>
+
+<div class="slider" id="slider">
+
+<!-- SLIDE 1 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>Merry Christmas 🎄</h1>
+
+<h2>My Ayuuu 🎀</h2>
+
+<p>
+
+This Christmas feels extra cozy and magical…  
+
+because you’re in my life.
+
+</p>
+
+<p>
+
+You are my favorite thought,  
+
+my soft smile,  
+
+and the calm my heart loves to stay in.
+
+</p>
+
+<button class="button" onclick="next()">next 💖</button>
+
+</div>
+
+</div>
+
+<!-- SLIDE 2 -->
+
+<div class="slide">
+
+<div class="card">
+
+<p>
+
+Ayuuu, loving you feels easy and warm,  
+
+like holding hands on a winter evening.
+
+</p>
+
+<p>
+
+I love the little things about you —  
+
+your smile, your care,  
+
+the way you make everything feel lighter.
+
+</p>
+
+<button class="button" onclick="next()">keep going 💕</button>
+
+</div>
+
+</div>
+
+<!-- SLIDE 3 -->
+
+<div class="slide">
+
+<div class="card">
+
+<p>
+
+If I could choose one place to be,
+
+it would always be  
+
+right next to you.
+
+</p>
+
+<p>
+
+I want slow walks, silly laughs,  
+
+soft talks, and memories  
+
+that feel like *us*.
+
+</p>
+
+<div class="heart">💗</div>
+
+<button class="button" onclick="next()">a little promise 🤍</button>
+
+</div>
+
+</div>
+
+<!-- SLIDE 4 (Promise) -->
+
+<div class="slide">
+
+<div class="card">
+
+<p>
+
+Here’s my promise to you, my girl —
+
+</p>
+
+<p>
+
+I promise to care gently,  
+
+to stay honest,  
+
+and to always make you feel safe and loved.
+
+</p>
+
+<p>
+
+No matter where life goes,  
+
+I’ll always choose *you*.
+
+</p>
+
+<button class="button" onclick="next()">one last thing 😌</button>
+
+</div>
+
+</div>
+
+<!-- SLIDE 5 -->
+
+<div class="slide">
+
+<div class="card">
+
+<p>
+
+So Ayuuu…
+
+</p>
+
+<p>
+
+Will you go on a cute, cozy,  
+
+very us kind of date with me  
+
+on <strong>25th December</strong>? 🎄💞
+
+</p>
+
+<button class="button" onclick="yes()">Yes, I will 💖</button>
+
+<div id="surprise">
+
+💋 yayyy! you just made my heart so happy  
+
+<br><br>
+
+can’t wait to see you on the 25th 😘  
+
+<br><br>
+
+<a class="whatsapp"
+
+href="https://wa.me/918318588703?text=Yes%20I%20accept%20our%2025th%20December%20date%20💖">
+
+accept on WhatsApp 💬
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let i=0;
+
+function next(){
+
+i++;
+
+document.getElementById("slider").style.transform=`translateX(-${i*100}vw)`;
+
+}
+
+function yes(){
+
+document.getElementById("surprise").style.display="block";
+
+for(let k=0;k<20;k++)kiss();
+
+}
+
+function kiss(){
+
+let k=document.createElement("div");
+
+k.className="kiss";
+
+k.innerHTML="💋";
+
+k.style.left=Math.random()*100+"vw";
+
+k.style.top=Math.random()*60+30+"vh";
+
+document.body.appendChild(k);
+
+setTimeout(()=>k.remove(),2400);
+
+}
+
+// Snow
+
+for(let s=0;s<30;s++){
+
+let x=document.createElement("div");
+
+x.className="snow";
+
+x.innerHTML="❄";
+
+x.style.left=Math.random()*100+"vw";
+
+x.style.animationDuration=(Math.random()*6+6)+"s";
+
+document.body.appendChild(x);
+
+}
+
+// Hearts
+
+for(let h=0;h<22;h++){
+
+let y=document.createElement("div");
+
+y.className="floating-heart";
+
+y.innerHTML="💖";
+
+y.style.left=Math.random()*100+"vw";
+
+y.style.animationDuration=(Math.random()*5+5)+"s";
+
+document.body.appendChild(y);
+
+}
+
+</script>
+
+</body>
+
+</html>
